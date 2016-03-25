@@ -12,18 +12,4 @@ export default class BaseService {
 	protected utils: Utils;
 
     host: string = 'http://localhost:4000/api';
-    
-    json(url: string, data?: any, method: string = 'GET'):async.IThenable<any>{
-        return this.http.json({
-        url: url,
-        data: data,
-        method: method
-    }).then((success) => {
-        return success;
-    }, (error) =>{
-        throw error.response.message;
-    });
-    }
-
-
 }

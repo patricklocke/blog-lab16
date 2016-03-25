@@ -9,12 +9,12 @@ export default class MyApp extends App {
         super();
 
 		config.routingType = config.STATE;
-
+    
         router.configure([
             { pattern: '', view: HomeViewControl },
             { pattern: 'newpost', view: NewpostViewControl },
             { pattern: 'posts', view: PostsViewControl},
-            { pattern: 'detail/:id', view: DetailViewControl}
+            { pattern: 'detail/:someId', view: DetailViewControl},
         ]);
     }
 

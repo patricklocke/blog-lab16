@@ -1,0 +1,23 @@
+<h1>Read all about them here!</h1>
+    
+    <ul class="list-group">
+        <li class="row list-group-item" ng-repeat="post in posts | orderBy: '-createdAt'">
+            <span class="col-phn-3">Author</span> 
+            <span class="col-phn-3">Title</span>
+            <span class="col-phn-3">Content</span>
+            <!--<span class="col-phn-1">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#contentblock" aria-expanded="false"                 aria-controls="contentblock">
+                READ MORE!
+              </button>
+                <div class="collapse" id="contentblock">
+                    <div class="card card-block">
+                        {{post.content}}
+                    </div>
+                </div>
+            </span>
+            <span class="col-phn-1"></span>-->
+                
+            <button plat-tap="" class="col-phn-3" id="readme">Read Post</button>
+            
+        </li>
+    </ul>

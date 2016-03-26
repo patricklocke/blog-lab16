@@ -16,7 +16,7 @@ export default class DetailViewControl extends BaseViewControl {
     navigatedTo(parameters: any) {
         let idVal: string = parameters.someId;
         this.postRepo.getPost(idVal).then((success) =>{
-            console.log('wohoo!');
+            console.log('woohoo!');
             this.context.post = success;
         }, (err) => {
             console.log(err);

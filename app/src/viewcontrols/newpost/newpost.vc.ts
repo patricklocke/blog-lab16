@@ -30,6 +30,7 @@ export default class NewpostViewControl extends BaseViewControl {
         },(error) => {
             console.log(error);
         });
+        this.navigator.navigate(HomeViewControl);
         
     };
 }

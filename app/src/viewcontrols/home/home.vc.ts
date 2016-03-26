@@ -26,7 +26,7 @@ export default class HomeViewControl extends BaseViewControl {
         });
     }
     goToCompose(): void {
-        this.navigator.navigate(DetailViewControl);
+        this.navigator.navigate(NewpostViewControl);
     }
     readMore(postId: string):void{
         this.navigator.navigate(DetailViewControl,{
